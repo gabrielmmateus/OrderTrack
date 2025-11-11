@@ -1,6 +1,6 @@
-# OrderTrack - Trabalho de Conclusão de curso
+# OrderTrack
 
-<img src="assets/images/logo.png" alt="Exemplo imagem">
+
 
 OrderTrack é uma solução de software desenvolvida para a gestão eficaz de ordens de serviço, especialmente adaptada para o ambiente educacional do SENAI Suíço-Brasileira “Paulo Ernesto Tolle”.
 
