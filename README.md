@@ -67,8 +67,8 @@ Antes de começar, instale:
 ## **Passo 3 — Importar o banco de dados**
 
 1. Acesse: [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/)  
-2. Clique em **Novo** → crie o banco chamado **`order_track`**  
-3. Vá na aba **Importar**  
+2. Clique em **Novo** → digite **`order_track`** e clique em criar 
+3. Dentro de **`order_track`** vá na aba **Importar**  
 4. Selecione o arquivo:  order_track.sql
 5. Clique em **Executar / Go**  
 6. O banco e as tabelas serão criados automaticamente.
