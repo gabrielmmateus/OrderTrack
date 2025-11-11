@@ -34,7 +34,7 @@ Este guia ensina **passo a passo** como instalar e executar o sistema **OrderTra
 
 ---
 
-## requisitos
+## Requisitos
 
 Antes de começar, instale:
 
@@ -69,7 +69,7 @@ Antes de começar, instale:
 1. Acesse: [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/)  
 2. Clique em **Novo** → crie o banco chamado **`order_track`**  
 3. Vá na aba **Importar**  
-4. Selecione o arquivo:  order_track_populado.sql
+4. Selecione o arquivo:  order_track.sql
 5. Clique em **Executar / Go**  
 6. O banco e as tabelas serão criados automaticamente.
 
@@ -87,7 +87,7 @@ $senha = "";
 $dbname = "order_track";
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 ?>
-
+```
 ---
 
 ##  **Passo 5 — Instalar dependências PHP (Composer)**
@@ -113,12 +113,6 @@ Você verá a tela inicial com duas opções:
 Funcionário 
 
 Administrador
-
----
-
-Usuário e Senha para administrador padrão: 
-Usuário: admin
-Senha: admin
 
 ---
 
