@@ -1,0 +1,256 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: #8CB2B0;
+
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 1em; /* Tamanho de fonte relativo */
+}
+
+
+
+body {
+    /* font-family: Arial, sans-serif, bold; */
+    background-color: #E9F5EE;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    
+    padding: 10px 20px;
+}
+
+
+/*Estilos cadastro funcionário */
+
+.employee-image {
+    margin-top: 20px;
+}
+
+.employee-image img {
+    max-width: 40%;
+    border-radius: 50%; /* Tornar a imagem arredondada */
+}
+
+
+.navbar {
+    background-color: #fff;
+}
+
+#logo {
+    width: 170px;
+    height: 70px;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+  }
+
+.header a {
+
+    color: #8CB2B0;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ 
+.links {
+    margin-left: 20px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 112px);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.login-form {
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.forget{
+    font-size: 12px;
+    color: #5b6b8b;
+    float: right;
+}
+
+.login-form h2 {
+    margin-bottom: 50px;
+}
+
+.login-form input {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #8CB2B0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F5F5F5;
+    color: #525252;
+    clear: both;
+}
+
+.main-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px ; /* Adicionando margem para espaçamento vertical */
+    grid-column-gap: 200px;
+    grid-row-gap: 10em;
+}
+
+/* Estilo para a imagem do funcionário */
+.funcionario-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* Estilo para a imagem do ícone de mensagem */
+.mensagem-img {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sub-card {
+    background-color: #8CB2B0;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    transform: scale(1.45);
+    cursor: pointer;
+    transition: transform 0.3s; /* Adiciona uma transição suave para a propriedade transform */
+}
+  
+
+  
+.sub-card:hover {
+    transform: scale(1.5); /* Aumenta o tamanho no hover */
+}
+
+.sub-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.sub-card p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+.sub-card a img {
+    width: 20px;
+    height: 20px;
+}
+  
+  
+#logo_equipe{
+    width: 70px;
+    height: 60px;
+}
+
+footer {
+    color: #A9A3A3;
+    font-weight: 500;
+    background-color: #fff;
+  
+    bottom: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+   
+    width: 100%;
+    height: 70px;
+  }
+
+
+  @media(max-width: 1380px){
+    .main-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+  }
+  
+
+  @media (max-width: 800px) {
+    .main-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        cursor: pointer; /* o cursor de mão */
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sub-card {
+        width: calc(50% - 20px); /* 50% do tamanho menos o espaçamento */
+        margin: 10px;
+        cursor: pointer; /* o cursor de mão */
+    }
+}
+
+@media (max-width: 800px) {
+    .main-card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+

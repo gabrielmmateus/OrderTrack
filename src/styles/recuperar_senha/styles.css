@@ -1,0 +1,246 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: #8CB2B0;
+
+}
+
+body {
+    font-family: Arial, sans-serif, bold;
+    background-color: #E9F5EE;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    color: white;
+    padding: 10px 20px;
+}
+
+/*Estilos cadastro funcionário */
+
+.employee-image {
+    margin-top: 20px;
+}
+
+.employee-image img {
+    max-width: 40%;
+    border-radius: 50%; /* Tornar a imagem arredondada */
+}
+
+
+.navbar {
+    background-color: #fff;
+}
+
+#logo {
+    width: 170px;
+    height: 70px;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+  }
+
+.header a {
+
+    color: #8CB2B0;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ 
+.linkss {
+    margin-left: 20px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 112px);
+}
+
+.login-form {
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.forget{
+    font-size: 12px;
+    color: #5b6b8b;
+    float: right;
+}
+
+.login-form h2 {
+    margin-bottom: 50px;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #8CB2B0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+#logo_equipe{
+    width: 70px;
+    height: 60px;
+}
+
+#p_footer{
+    color: #A9A3A3;
+    font-weight: bold;
+}
+
+  
+footer {
+    color: #A9A3A3;
+    font-weight: 500;
+    background-color: #fff;
+    bottom: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+   
+    width: 100%;
+    height: 70px;
+
+    
+    
+}
+
+
+
+.notificacao{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #8CB2B0;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+.notificacao.active{
+    transform: translateX(0%);
+}
+.notificacao .notificacao-div{
+    display: flex;
+    align-items: center;
+}
+.notificacao-div .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #8CB2B0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.notificacao-div .mensagem{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.mensagem .text{
+    font-size: 20px;
+    font-weight: 400;;
+    color: #8CB2B0;
+}
+.mensagem .text.text-1{
+    font-weight: 600;
+    color: #8CB2B0;
+}
+.notificacao .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.notificacao .close:hover{
+    opacity: 1;
+}
+.notificacao .tempo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+.notificacao .tempo:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #8CB2B0;
+}
+.tempo.active:before{
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+.bi-check-lg {
+    font-size: 30px;
+}
+
+.close {
+    font-size: 20px;
+}
+
+.bi-x-circle-fill {
+    color: #8CB2B0;
+}
+
+.notificacao .tempo_error:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}

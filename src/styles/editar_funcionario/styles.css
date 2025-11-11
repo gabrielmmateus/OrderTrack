@@ -1,0 +1,351 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+ 
+
+.navbar {
+
+    background-color: #fff;
+
+}
+
+ 
+
+#logo {
+
+    width: 170px;
+
+    height: 70px;
+
+}
+
+ 
+
+ 
+
+.dropdown-toggle::after {
+
+    content: none !important;
+
+  }
+
+ 
+
+ 
+
+ 
+
+.header a {
+
+    color: #8CB2B0;
+
+    font-size: 18px;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+ 
+
+}
+
+ 
+
+.linkss {
+
+    margin-left: 20px;
+
+}
+
+ 
+
+body {
+
+    background-color: #E9F5EE;
+
+}
+
+ 
+
+.container-form {
+
+    margin-top: 50px;
+
+    background-color: #fff;
+
+    border-radius: 20px;
+    
+
+}
+
+
+
+.cont-form {
+
+    padding: 0px 40px 80px 40px;
+
+    font-weight: 500;
+
+    color: #000;
+
+ 
+
+   
+
+}
+
+.input_imagem{
+    display: inline-block;
+}
+
+
+
+.titulo {
+
+    padding: 20px 0px 0px 0px;
+
+    color: #8CB2B0;
+
+    margin-bottom: 20px;
+
+}
+
+ 
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+.div_foto {
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+ 
+
+.status {
+
+    margin-top: 20px;
+
+}
+
+ 
+
+.btn {
+
+    width: 200px;
+
+    color: #fff;
+
+    background-color: #8CB2B0;
+
+    font-weight: 500;
+
+}
+
+.dropdown-item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #8CB2B0;
+    font-size: 18px;
+
+}
+
+
+ 
+
+.btn:hover{
+
+    border: 2px solid #8CB2B0;
+
+    background-color: #fff;
+
+    color: #8CB2B0;
+
+   
+
+}
+
+ 
+#logo_equipe{
+    width: 70px;
+    height: 60px;
+}
+
+#p_footer{
+    color: #A9A3A3;
+    font-weight: bold;
+}
+
+.funcionario-img{
+    width: 200px;
+    height: 200px;
+}
+  
+footer {
+    color: #A9A3A3;
+    font-weight: 500;
+    background-color: #fff;
+    bottom: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+   
+    width: 100%;
+    height: 70px;
+
+    
+    
+}
+
+@media (max-width: 1000px){
+    .container-form {
+        width: 450px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .funcionario-img{
+        width: 150px;
+        height: 150px;
+    }
+    .div_foto{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 500px){
+    .container-form {
+        width: 350px;
+    }
+    .input_imagem{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+}
+
+  
+.notificacao{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #8CB2B0;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+.notificacao.active{
+    transform: translateX(0%);
+}
+.notificacao .notificacao-div{
+    display: flex;
+    align-items: center;
+}
+.notificacao-div .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #8CB2B0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.notificacao-div .mensagem{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.mensagem .text{
+    font-size: 20px;
+    font-weight: 400;;
+    color: #8CB2B0;
+}
+.mensagem .text.text-1{
+    font-weight: 600;
+    color: #8CB2B0;
+}
+.notificacao .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.notificacao .close:hover{
+    opacity: 1;
+}
+.notificacao .tempo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+.notificacao .tempo:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #8CB2B0;
+}
+.tempo.active:before{
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+.bi-check-lg {
+    font-size: 30px;
+    color: #8CB2B0;
+}
+
+.close {
+    font-size: 20px;
+    color: #8CB2B0;
+}
+
+.bi-x-circle-fill {
+    color: #8CB2B0;
+}
+  
+
+.notificacao .tempo_error:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}

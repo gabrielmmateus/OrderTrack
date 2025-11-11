@@ -1,0 +1,371 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: #8CB2B0;
+
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    color: #fafafa;
+    font-size: 20px;
+
+}
+h3 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    margin-top: 100px; /* Ajuste a margem superior para mover o texto para baixo */
+    margin-bottom: 10px; /* Ajuste a margem inferior para mover o texto para cima */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif, bold;
+    background-color: #E9F5EE;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    color: white;
+    padding: 10px 20px;
+}
+
+/*Estilos cadastro funcionário */
+
+.employee-image {
+    margin-top: 20px;
+}
+
+.employee-image img {
+    max-width: 40%;
+    border-radius: 50%; /* Torna a imagem arredondada */
+}
+
+
+.navbar {
+    background-color: #fff;
+}
+
+#logo {
+    width: 170px;
+    height: 70px;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+  }
+
+.header a {
+
+    color: #8CB2B0;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ 
+.linkss {
+    margin-left: 20px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 112px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.login-form {
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.forget{
+    font-size: 12px;
+    color: #5b6b8b;
+    float: right;
+}
+
+.login-form h2 {
+    margin-bottom: 50px;
+}
+
+.login-form input {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #8CB2B0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+
+#logo_equipe{
+    width: 70px;
+    height: 60px;
+}
+
+footer {
+    color: #A9A3A3;
+    font-weight: 500;
+    background-color: #fff;
+  
+    bottom: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+   
+    width: 100%;
+    height: 70px;
+  }
+
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background: #8cac99;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    margin: 20px; /* Adiciona um espaçamento entre os cards */
+}
+
+.card:hover {
+    height: 210px;
+}
+
+
+
+.imgBX{
+    position: absolute;
+    left: 50%;
+    top:-50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.card:hover .imgBX{
+    width: 150px;
+    height: 150px;
+}
+
+.imgBX img{
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    width: 70%;
+    object-fit: cover;
+}
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    transition: .45s;
+    cursor: pointer;
+}
+
+.card .content details{
+    padding: 20%;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card .content details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .card-group-top,
+    .card-group-bottom {
+        flex-direction: column; /* Empilhe os cards verticalmente */
+        align-items: flex-start; /* Alinhe os cards à esquerda */
+    }
+    
+    .card-group-top .card,
+    .card-group-bottom .card {
+        width: 100%; /* Cards ocupam 100% da largura da tela */
+        margin: 10px 0; /* Espaçamento entre os cards */
+    }
+    
+    .card-group-bottom {
+        margin-top: 10px; /* Espaçamento entre os grupos */
+    }
+}
+
+.card-group-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Grupo de cards inferiores */
+.card-group-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 25px; /* Adicione um espaço entre os grupos */
+}
+
+
+
+
+.notificacao{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #8CB2B0;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+.notificacao.active{
+    transform: translateX(0%);
+}
+.notificacao .notificacao-div{
+    display: flex;
+    align-items: center;
+}
+.notificacao-div .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #8CB2B0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.notificacao-div .mensagem{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.mensagem .text{
+    font-size: 20px;
+    font-weight: 400;;
+    color: #8CB2B0;
+}
+.mensagem .text.text-1{
+    font-weight: 600;
+    color: #8CB2B0;
+}
+.notificacao .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.notificacao .close:hover{
+    opacity: 1;
+}
+.notificacao .tempo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+.notificacao .tempo:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #8CB2B0;
+}
+.tempo.active:before{
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+.bi-check-lg {
+    font-size: 30px;
+}
+
+.close {
+    font-size: 20px;
+}
+
+.bi-x-circle-fill {
+    color: #8CB2B0;
+}
+
+.notificacao .tempo_error:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
