@@ -24,12 +24,95 @@ O principal objetivo do OrderTrack é melhorar a eficiência operacional e a qua
 
 ## Como Usar
 
-1. Faça o clone deste repositório para o seu ambiente de desenvolvimento local.
-2. Abra o projeto em sua IDE preferida.
-3. Execute o comando `npm install` para instalar as dependências.
-4. Configure as variáveis de ambiente conforme necessário.
-5. Execute o projeto utilizando o comando `npm start`.
-6. Acesse a aplicação em seu navegador utilizando o endereço fornecido pela sua IDE.
+Este guia ensina **passo a passo** como instalar e executar o sistema **OrderTrack** em sua máquina local usando o **XAMPP** e o **Visual Studio Code**.
+
+> **Observação:** já existe um usuário administrador padrão:  
+> **Usuário:** `admin`  
+> **Senha:** `admin`  
+>  
+> Recomenda-se alterar essa senha após o primeiro acesso.
+
+---
+
+## equisitos
+
+Antes de começar, instale:
+
+- **[XAMPP](https://www.apachefriends.org/)** — servidor PHP + MySQL  
+- **[Visual Studio Code](https://code.visualstudio.com/)** — para editar o código  
+- **[Composer](https://getcomposer.org/)** — para instalar dependências PHP  
+- Navegador (Chrome, Firefox, Edge)
+
+---
+
+## **Passo 1 — Copiar o projeto para o XAMPP**
+
+1. Localize a pasta do projeto (por exemplo: `OrderTrack-main`).  
+2. Copie essa pasta para o diretório: C:\xampp\htdocs\OrderTrack
+
+> Dica: renomeie a pasta para `OrderTrack` para facilitar o acesso.
+
+---
+
+## **Passo 2 — Iniciar Apache e MySQL**
+
+1. Abra o **XAMPP Control Panel** (`C:\xampp\xampp-control.exe`).  
+2. Clique em **Start** nos módulos: 
+- Apache   
+- MySQL  
+3. Ambos devem ficar **verdes** (ativos).
+
+---
+
+## **Passo 3 — Importar o banco de dados**
+
+1. Acesse: [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/)  
+2. Clique em **Novo** → crie o banco chamado **`order_track`**  
+3. Vá na aba **Importar**  
+4. Selecione o arquivo:  order_track_populado.sql
+5. Clique em **Executar / Go**  
+6. O banco e as tabelas serão criados automaticamente.
+
+---
+
+## **Passo 4 — Configurar a conexão com o banco (opcional)**
+
+O arquivo responsável é `conection.php`:
+
+```php
+<?php
+$servidor = "localhost";
+$usuario = "root";
+$senha = "";
+$dbname = "order_track";
+$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+?>
+
+##  **Passo 5 — Instalar dependências PHP (Composer)**
+
+1. Abra o terminal no VS Code (Ctrl + `). 
+2. Vá até a pasta lib do projeto:
+cd C:\xampp\htdocs\OrderTrack\lib
+4. Execute:
+composer install  
+6. O banco e as tabelas serão criados automaticamente.
+
+##  **Passo 6 — Acessar o site**
+
+Abra no navegador:
+
+http://localhost/OrderTrack/
+
+
+Você verá a tela inicial com duas opções:
+
+Funcionário 
+
+Administrador
+
+Usuário e Senha para administrador padrão: 
+Usuário: admin
+Senha: admin
 
 ## Tecnologias Utilizadas
 
