@@ -34,7 +34,7 @@ Este guia ensina **passo a passo** como instalar e executar o sistema **OrderTra
 
 ---
 
-## equisitos
+## requisitos
 
 Antes de começar, instale:
 
@@ -88,6 +88,8 @@ $dbname = "order_track";
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 ?>
 
+---
+
 ##  **Passo 5 — Instalar dependências PHP (Composer)**
 
 1. Abra o terminal no VS Code (Ctrl + `). 
@@ -96,6 +98,8 @@ cd C:\xampp\htdocs\OrderTrack\lib
 4. Execute:
 composer install  
 6. O banco e as tabelas serão criados automaticamente.
+
+---
 
 ##  **Passo 6 — Acessar o site**
 
@@ -110,9 +114,13 @@ Funcionário
 
 Administrador
 
+---
+
 Usuário e Senha para administrador padrão: 
 Usuário: admin
 Senha: admin
+
+---
 
 ## Tecnologias Utilizadas
 
