@@ -1,4 +1,5 @@
 // Definindo a variável 'modal' no escopo global
+console.log("✅ aparecemodal.js carregado com sucesso!");
 let modal;
 let idFuncionarioAtual = null;
 
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
             // Faz uma solicitação AJAX para buscar os dados do funcionário
             $.ajax({
-                url: '/sistema_OS/src/api/controller/getFuncionario.php',
+                url: '../../src/api/controller/getFuncionario.php',
                 type: 'GET',
                 data: { funcionarioID: funcionarioId },
                 success: function(data) {
